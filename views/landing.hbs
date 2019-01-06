@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="/views/landingStyle.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar nav nav-pills navbar-fixed-top navbar-default">
+
+        <ul class="nav navbar-nav mr-auto">
+            <a class="navbar-brand" href="/">
+                <img src="./../Assets/logo.png" alt="FelIn Logo" width="40" height="auto" style="margin-top: 0px;">
+            </a>
+            <li><a href="/why-hire-from-us">Why Hire From Us</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="https://www.gofundme.com/">Donate</a></li>
+        </ul>
+        <form method="POST" action="/profile"  class="login">
+            <select name="accountType">
+                <option value="recruiter">Recruiter</option>
+                <option value="endorser">Endorser</option>
+                <option value="seeker">Seeker</option>
+            </select>
+            <input class="log" type="text" name="email" value="Email" onfocus="if (this.value == 'Email') {this.value = '';}"
+                onblur="if (this.value == '') {this.value = 'Email';}">
+            <input class="log" type="password" name="password" value="Password" onfocus="if (this.value == 'Password') {this.value = '';}"
+                onblur="if (this.value == '') {this.value = 'Password';}">
+            <input class="btn btn-primary" type="submit" value="Log In">
+        </form>
+
+    </nav>
+    <br><br><br><br><br><br>
+    <div id='#home' class="main-overlay">
+        <div class="row-fluid">
+            <div class="iamtext text-center">I want to...</div>
+        </div>
+        <div class="col-lg-12" style="height:20px;"></div>
+        <div class="row">
+            <div class="col-lg-12"></div>
+        </div>
+        <font size='4'>
+            <a href="/signup/recruiter">
+                <div class="row-fluid">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-primary">
+                            <font size='5'>Hire</font>
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="col-lg-12" style="height:20px;"></div>
+            <a href="/signup/seeker">
+                <div class="row-fluid">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-success">
+                            <font size='5'>Work</font>
+                        </button>
+                    </div>
+                </div>
+            </a>
+            <div class="col-lg-12" style="height:20px;"></div>
+            <a href="/signup/endorser">
+                <div class="row-fluid">
+                    <div class="text-center">
+                        <button type="button" class="btn btn-info">
+                            <font size='5'>Endorse</font>
+                        </button>
+                    </div>
+                </div>
+            </a>
+        </font>
+    </div>
+
+    <div>
+    </div>
+
+</body>
+
+</html>

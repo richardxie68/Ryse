@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/views/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="/Assets/logo.png" width="80" height="auto" alt="">
+        </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Profile<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container content">
+        <h3>Searching for individuals with Skills:{{skills}} in Location:{{location}}.</h1>
+            <table class="table table-dark">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Display Image</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Location</th>
+                        <th scope="col">View Profile</th>
+                        <th scope="col">Invite for interview</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td><img class="avatar-img" src="/Assets/pic3.jpg"/></td>
+                        <td>Bill Sheng</td>
+                        <td>billxsheng@gmail.com</td>
+                        <td>Toronto</td>
+                        <td><a href="#" class="btn btn-primary" >View</a></td>
+                        <td><a href="#" class="btn btn-success" >Invite for Interview</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td><img class="avatar-img" src="/Assets/pic2.jpg"/></td>
+                        <td>Rahib Kanjiyani</td>
+                        <td>rk5498@hotmail.com</td>
+                        <td>Toronto</td>
+                        <td><a href="#" class="btn btn-primary" >View</a></td>
+                        <td><a href="#" class="btn btn-success" >Invite for Interview</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td><img class="avatar-img" src="/Assets/pic1.jpg"/></td>
+                        <td>Richard Xie</td>
+                        <td>richard68@gmail.com</td>
+                        <td>Toronto</td>
+                        <td><a href="#" class="btn btn-primary" >View</a></td>
+                        <td><a href="#" class="btn btn-success" >Invite for Interview</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <a href="/profile" type="button" class="btn">Back</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

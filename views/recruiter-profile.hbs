@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="/views/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+
+    <title>Profile</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/">
+            <img src="../Assets/logo.png" width="80" height="auto" alt="">
+        </a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Profile<span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container content">
+        <h1>{{first}}&nbsp;{{last}}</h1>
+        <img />
+        <h3>Organization: {{company}}</h3>
+        <h3>Location: {{location}}</h3>
+        <h3>Website: {{website}}</h3>
+        <h3>Email: {{email}}</h3>
+        <h3>About Me/About the Organization</h3>
+        <p>{{about}}</p>
+        <h3>Available Positions</h3>
+        <p>{{positions}}</p>
+        <h3>Company Requirements</h3>
+        <p>{{req}}</p>
+        <h3>Company Responsibilities</h3>
+        <p>{{res}}</p>
+        <h3>Candidate Search</h3>
+        <form method="POST" action="/profile/recruiter/search">
+            <input class="col-md-4 form-control" name="location" type="search" placeholder="Location" />
+            <input class="col-md-4 form-control" name="skills" type="search" placeholder="Skills" />
+            <input type="submit" class="btn-submit col-md-2 form-control" />
+        </form>
+        <h3>Candidate Search by Username</h3>
+        <form method="POST" action="/profile/recruiter/search/username">
+            <input class="col-md-4 form-control" name="username" type="search" placeholder="Username" />
+            <input type="submit" class="btn-submit col-md-2 form-control" />
+        </form>
+        <a href="/logout" type="button" class="btn">Sign Out</a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

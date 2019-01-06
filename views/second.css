@@ -1,0 +1,240 @@
+
+html {
+    background: #e6e9e9;
+    background-image: linear-gradient(270deg, rgb(230, 233, 233) 0%, rgb(216, 221, 221) 100%);
+    -webkit-font-smoothing: antialiased;
+    font-family: "raleway";
+}
+
+body {
+    background-color: white;
+    box-shadow: 0 0 0px rgba(0, 0, 0, 0.06);
+    color: #545454;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: auto;
+    height: 100vh;
+}
+
+.navbar-header img{
+    max-height: 100%;
+    width: auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+h4 {
+    font-size:200%;
+    font-family: "avenir";
+    font-weight: 250;
+    margin-top: 1.3em;
+}
+
+h1 {
+    font-size:200%;
+    font-family: "avenir";
+    font-weight: 250;
+    margin-top: 1.3em;
+}
+.bigtext {
+    font-size: 70px;
+    font-weight: bold;
+    color: black;
+    
+}
+
+.navbar-default{
+    background-color:whitesmoke;
+    border-color: whitesmoke;
+    color: #21d18e;
+}
+
+.firstsec{
+    background-color:rgba(0, 153, 94, 0.8);
+    color: white;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+
+.secondsec{
+    background-color: white;
+    color:green;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+.thirdsec{
+    background-color:rgba(0, 153, 94, 0.8);
+    color:white;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+.fourthsec{
+    background-color: whitesmoke;
+    color: green;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 20px;
+}
+.fifthsec{
+    background-color: rgba(0, 153, 94, 0.8);
+    color: white;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.sixthsec{
+    background-color:white;
+    color: black;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: "avenir";
+}
+
+.seventhsec{
+    background-color:rgba(0, 153, 94, 0.8);
+    color: white;
+    background-size:cover;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 50px; 
+    font-family: "avenir";
+}
+.banner{
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.descrip{
+    align-content: center;
+    font-size: 125%;
+}
+
+ul{
+    padding-left: 550px;
+    font-size: 125%;
+    font-family: "avenir";
+}
+
+a {
+    color: #0083e8;
+}
+
+b, strong {
+    font-weight: 600;
+}
+
+samp {
+    display: none;
+}
+
+img {
+    animation: colorize 2s cubic-bezier(0, 0, .78, .36) 1;
+    background: transparent;
+    border: 0px solid rgba(0, 0, 0, 0.12);
+    border-radius: 8px;
+    display: block;
+    margin: 1.3em auto;
+    max-width: 95%;
+    height: 250px;
+    width: auto;
+}
+
+pic img {
+    margin-right: 20px;
+}
+
+.star-rating {
+    direction: rtl;
+    display: inline-block;
+    padding: 20px
+}
+
+.star-rating input[type=radio] {
+    display: none
+}
+
+.star-rating label {
+    color: #bbb;
+    font-size: 18px;
+    padding: 0;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out
+}
+
+.fullbody {
+        background-color: rgba(0, 153, 94, 0.8);
+}
+.outerlayer {
+    background-color: white;
+    color: rgba(0, 153, 94, 0.8);
+    width: 40%;
+    height: auto;
+    margin: 0 auto;
+    background-size:cover;
+    padding: 0;
+    padding-top: 20px;
+    padding-bottom: 50px; 
+    font-family: "avenir";
+    font-size: 125%;
+    border-radius: 20px;
+    
+}
+
+.mybutton {
+    background-color: rgba(0, 153, 94, 0.8);;
+    color:white;
+    border-color: black;
+}
+
+.star-rating label:hover,
+.star-rating label:hover ~ label,
+.star-rating input[type=radio]:checked ~ label {
+    color: #f2b600
+}
+
+@keyframes colorize {
+    0% {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    100% {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+}

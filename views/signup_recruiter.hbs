@@ -1,0 +1,47 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Signup | Recruiter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="apple-touch-icon" href="icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="../Assets/normalize.css">
+    <link rel="stylesheet" href="/views/signup.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Raleway" />
+</head>
+
+<body>
+    <nav class="header clearfix">
+        <a href="/" ><img src="../Assets/logo.png" alt="logo"></a>
+        <h3>Ryse</h3>
+    </nav>
+    <h2  class="welcome">Welcome to Ryse! Please enter the following information to post a job.</h2>
+    <div class="form">
+        <form action="/signup/submit/recruiter" method="POST">
+            <p class="Questions">General Information</p>
+            First Name: <input type="text" name="first"><br>
+            Last Name: <input type="text" name="last"><br>
+            Company: <input type="text" name="company"><br>
+            Location: <input type="text" name="location"><br>
+            Website: <input type="text" name="website"><br>
+            About: <input type="text" name="about"><br>
+            Position(s): <input type="text" name="positions"><br>
+            Email: <input type="email" name="email"><br>
+            Company Responsibilities: <textarea type="text" name="responsibilities"></textarea><br>
+            Company Requirements: <textarea type="text" name="requirements"></textarea><br><br>
+            <p class="Questions">Password</p>
+            Password: <input type="password" name="password"><br>
+            Re-enter Password: <input type="password" name="passwordConfirm"><br>
+            <input class="btn btn-primary" type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
